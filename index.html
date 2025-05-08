@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencil Village Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="resource-tracker" style="color: brown">
+                <p>Wood</p>
+                <div class="quantity">
+                    <p class="current-wood">3</p>
+                    <p class="divider">/</p>
+                    <p class="maximum-wood">4</p>
+                </div>
+        </div>
+        <div class="resource-tracker" style="color: gray">
+            <p>Stone</p>
+            <div class="quantity">
+                <p class="current-stone">0</p>
+                <p class="divider">/</p>
+                <p class="maximum-stone">4</p>
+            </div>
+        </div>
+        <div class="resource-tracker" style="color: gold">
+            <p>Gold</p>
+            <div class="quantity">
+                <p class="current-gold">0</p>
+                <p class="divider">/</p>
+                <p class="maximum-gold">4</p>
+            </div>
+        </div>
+        <div class="resource-buttons">
+            <div class="add-resources">
+                <button class="resource-button" id="wood-button">Add Wood</button>
+                <button class="resource-button" id="stone-button">Add Stone</button>
+                <button class="resource-button" id="gold-button">Add Gold</button>
+            </div>
+            <div class="remove-resources">
+                <button class="resource-button" id="remove-wood-button">Remove Wood</button>
+                <button class="resource-button" id="remove-stone-button">Remove Stone</button>
+                <button class="resource-button" id="remove-gold-button">Remove Gold</button>
+            </div>
+        </div>
+
+        <div class="building-tracker">
+            <div class="depot">
+                <p>Storage Depots</p>
+                <p id="depot-quantity">0</p>
+            </div>
+        </div>
+        <div class="depot-buttons">
+            <button id="build-depot-button">Build Depot</button>
+            <button id="remove-depot-button">Remove Depot</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
